@@ -2,7 +2,7 @@
  * @name CopyTextOnHighlight
  * @author Eyevou
  * @description Copies any highlighted text to the user's clipboard.
- * @version 1.0.2
+ * @version 1.0.3
  */
 
 module.exports = class CopyTextOnHighlight {
@@ -10,6 +10,8 @@ module.exports = class CopyTextOnHighlight {
 	stop()  { window.removeEventListener('mouseup', CopyEventHandler)}
 }
 
-var CopyEventHandler = function() {
-	if ( document.getSelection().toString() != '') {document.execCommand('copy');}
+const CopyEventHandler = () => {
+	if (document.getSelection().toString().length > 0) {
+        document.execCommand('copy');
+    }
 }
