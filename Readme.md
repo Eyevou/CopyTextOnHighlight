@@ -4,7 +4,7 @@ Readme File for CopyTextOnHighlight
 Description:
 This file is a plugin for Better Discord. You MUST have it installed for the plugin to function. 
 
-Downlod Better Discord: 
+Download Better Discord: 
 https://betterdiscord.app
 
 How to use:
